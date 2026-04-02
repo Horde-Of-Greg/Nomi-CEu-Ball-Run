@@ -32,7 +32,7 @@ mods.gregtech.assembly_line.recipeBuilder()
 mods.gregtech.assembly_line.recipeBuilder()
     .inputs(
         item('gregtech:fusion_casing', 1) * 3,
-        ore('circuitZpm') * 4,
+        ore('circuitUv') * 4,
         metaitem('plateDenseTrinaquadalloy') * 2
     )
     .fluidInputs(
@@ -48,7 +48,7 @@ mods.gregtech.assembly_line.recipeBuilder()
 mods.gregtech.assembly_line.recipeBuilder()
     .inputs(
         item('zbgt:misc_casing', 2),
-        ore('circuitUv') * 4,
+        ore('circuitUhv') * 4,
         item('nomilabs:quantumfluxedeterniumplating'),
         metaitem('quantumstar') * 4
     )

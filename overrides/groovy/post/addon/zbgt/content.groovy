@@ -21,6 +21,7 @@ import gregtech.api.recipes.RecipeBuilder
 crafting.with {
     // Energy Source Hatch
     remove('zbgt:creative_energy_sink_to_energy_source')
+    remove('zbgt:creative_energy_hatch_to_energy_sink')
     remove('zbgt:creative_emitter_to_energy_hatch')
     remove('zbgt:creative_energy_hatch_to_emitter')
 
@@ -31,34 +32,6 @@ crafting.with {
     // Creative Tank
     remove('zbgt:creative_fluid_hatch_to_tank')
     remove('zbgt:creative_tank_to_fluid_hatch')
-}
-
-if (LabsModeHelper.normal) {
-    // NM Specific
-
-    // Creative Fluid Source Hatch
-    mods.gregtech.creative_tank_provider.recipeBuilder()
-        .notConsumable(item('nomilabs:creativeportabletankmold'))
-        .inputs(metaitem('reservoir_hatch'))
-        .outputs(metaitem('zbgt:creative_reservoir_hatch'))
-        .duration(500).EUt(1_000_000) // Value to stay consistent with regular tank recipe
-        .buildAndRegister()
-
-    // Energy Source Hatch
-    mods.gregtech.precise_assembler_recipes.recipeBuilder()
-        .notConsumable(metaitem('infinite_energy'))
-        .inputs(metaitem('transformer.adjustable.uv') * 64, metaitem('laser_hatch.source_4096a.uv') * 4)
-        .inputWildNBT(metaitem('max.battery'))
-        .fluidInputs(fluid('soldering_alloy') * 9216,
-            fluid('polybenzimidazole') * 18432,
-            fluid('naquadria') * 2304,
-            fluid('omnium') * 1440)
-        .outputs(metaitem('zbgt:creative_energy_source'))
-        .casingTier(4)
-        .duration(200).EUt(VA[UHV])
-        .buildAndRegister()
-} else {
-// HM Specific
 }
 
 /* YOTTank Cells */

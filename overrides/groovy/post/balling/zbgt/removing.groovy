@@ -32,7 +32,7 @@ var craftingItemsToNuke = [
     metaitem('zbgt:cryogenic_freezer'),
     metaitem('zbgt:industrial_pbf'),
     metaitem('zbgt:yottank'),
-    metaitem('zbgt:large_alloy_smelter')
+    metaitem('zbgt:large_alloy_smelter'),
 ]
 
 var assemblerItemsToNuke = [
@@ -88,13 +88,13 @@ var assemblerItemsToNuke = [
     metaitem('zbgt:wrapped.misc.engraved_crystal_chip'),
     metaitem('zbgt:wrapped.misc.crystal_cpu'),
     metaitem('zbgt:wrapped.misc.crystal_soc'),
-    metaitem('zbgt:precise_assembler')
+    metaitem('zbgt:precise_assembler'),
 ]
 
 var assemblyLineItemsToNuke = [
     metaitem('zbgt:cal'),
     metaitem('zbgt:energy_infuser'),
-    metaitem('zbgt:molecular_transformer')
+    metaitem('zbgt:molecular_transformer'),
 ]
 
 for (var metaname: craftingItemsToNuke) {
