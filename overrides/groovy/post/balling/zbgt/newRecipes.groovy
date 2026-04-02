@@ -3,9 +3,7 @@ package post.balling.zbgt
 import static gregtech.api.GTValues.*
 import static post.classes.Common.*
 
-import gregtech.api.items.metaitem.MetaItem
 import gregtech.api.recipes.Recipe
-import gregtech.api.recipes.RecipeBuilder
 
 /* Replace Precise Ass Recipes */
 mods.gregtech.assembler.recipeBuilder()

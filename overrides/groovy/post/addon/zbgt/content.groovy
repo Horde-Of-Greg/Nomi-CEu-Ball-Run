@@ -58,7 +58,7 @@ if (LabsModeHelper.normal) {
         .duration(200).EUt(VA[UHV])
         .buildAndRegister()
 } else {
-    // HM Specific
+// HM Specific
 }
 
 /* YOTTank Cells */
