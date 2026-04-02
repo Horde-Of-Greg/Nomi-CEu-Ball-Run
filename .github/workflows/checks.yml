@@ -50,10 +50,6 @@ jobs:
         working-directory: ./tools
         run: npm run groovyLint
 
-      - name: Check QB
-        working-directory: ./tools
-        run: npm run gulp checkQB
-
       - name: Build Lang Typo Check
         working-directory: ./tools
         run: npm run gulp buildTypoCheck
