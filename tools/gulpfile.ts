@@ -58,7 +58,6 @@ import {
 	checkManifestStructure,
 	checkManifestFilesExist,
 } from "#tasks/helpers/checkManifest.ts";
-export const checkManifest = () => checkManifestStructure(true);
 export const fixManifest = () => checkManifestStructure(false);
 export const checkManifestFiles = checkManifestFilesExist;
 

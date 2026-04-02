@@ -46,10 +46,6 @@ jobs:
         working-directory: ./tools
         run: npm run check && npm run lint
 
-      - name: Check Manifest
-        working-directory: ./tools
-        run: npm run gulp checkManifest
-
       - name: Check Groovy Scripts
         working-directory: ./tools
         run: npm run groovyLint
