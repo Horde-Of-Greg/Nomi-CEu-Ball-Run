@@ -133,7 +133,7 @@ makeShaped("exchangertool", <buildinggadgets:exchangertool>.withTag({blockstate:
 	  L : <ore:gemLapis>,
 	  F : <metaitem:emitter.iv>, // IV Field Emitter
 	  R : <ore:dustRedstone>,
-	  I : <ore:ingotIron>}); 
+	  I : <ore:ingotIron>});
 
 // XP Juice
 mixer.recipeBuilder()
@@ -186,14 +186,14 @@ recipes.removeByRecipeName("gregtech:clay_ball_to_dust");
 
 //Item conduit - by hand
 recipes.addShaped(<enderio:item_item_conduit> * 4, [
-	[<ore:itemConduitBinder>, <metaitem:foilPolyvinylChloride>, <ore:itemConduitBinder>], 
+	[<ore:itemConduitBinder>, <metaitem:foilPolyvinylChloride>, <ore:itemConduitBinder>],
 	[<ore:wireGtSinglePulsatingIron>,<ore:wireGtSinglePulsatingIron>,<ore:wireGtSinglePulsatingIron>],
 	[<ore:itemConduitBinder>, <metaitem:foilPolyvinylChloride>, <ore:itemConduitBinder>]]);
 
 //ender fluid conduit - by hand
 recipes.addShaped(<enderio:item_liquid_conduit:2> * 4, [
-	[<ore:itemConduitBinder>, <metaitem:foilPolyvinylChloride>, <ore:itemConduitBinder>], 
-	[<metaitem:nomilabs:wireGtSingleVibrantAlloy>,<enderio:item_liquid_conduit:1>,<metaitem:nomilabs:wireGtSingleVibrantAlloy>], 
+	[<ore:itemConduitBinder>, <metaitem:foilPolyvinylChloride>, <ore:itemConduitBinder>],
+	[<metaitem:nomilabs:wireGtSingleVibrantAlloy>,<enderio:item_liquid_conduit:1>,<metaitem:nomilabs:wireGtSingleVibrantAlloy>],
 	[<ore:itemConduitBinder>, <metaitem:foilPolyvinylChloride>, <ore:itemConduitBinder>]]);
 
 
@@ -212,35 +212,6 @@ assembler.recipeBuilder()
 ////////////////////////// Creative Vending Upgrade ///////////////////////
 val creativecell = <thermalexpansion:cell>.withTag({Creative: 1 as byte, Level: 4 as byte}, false);
 val creativejetpack = <simplyjetpacks:itemjetpack>.withTag({JetpackParticleType: 3}, false);
-
-makeExtremeRecipe9(<metaitem:creative_chest> * 2,
-    ["ABBBBBBBA",
-     "BCBEDEBCB",
-     "BBSGHGSBB",
-     "BUJXIXJUB",
-     "BNSWKWSNB",
-     "BUJXLXJUB",
-     "BBSGMGSBB",
-     "BCBEDEBCB",
-     "ABBBBBBBA"],
-    { A : <storagedrawers:upgrade_creative>,
-      B : <ore:ingotInfinity>,
-      C : <draconicevolution:creative_rf_source>,
-      D : creativecell,
-      E : <extrautils2:creativeenergy>,
-      G : <extrautils2:passivegenerator:6>,
-      H : <avaritia:infinity_helmet>,
-      I : <avaritia:infinity_chestplate>,
-      J : creativejetpack,
-      K : <avaritia:infinity_sword>,
-      L : <avaritia:infinity_pants>,
-      M : <avaritia:infinity_boots>,
-      N : <metaitem:infinite_energy>,
-      S : <solarflux:solar_panel_infinity>,
-      U : <appliedenergistics2:creative_energy_cell>,
-      W : <thermalcultivation:watering_can:32000>.withTag({Water: 0, Mode: 4}, false),
-      X : <thermalexpansion:capacitor:32000>.withTag({Energy: 250000000}, false)
-    });
 
 //Numismatic Dynamo
 recipes.remove(<thermalexpansion:dynamo:5>);
@@ -454,7 +425,7 @@ if(!isNull(dml)) {
     for item in dmlItems {
         mods.jei.JEI.removeAndHide(item);
     }
-	
+
 	// remove book
 	mods.jei.JEI.removeAndHide(<patchouli:guide_book>.withTag({"patchouli:book": "deepmoblearning:book"}));
 	// remove spawnegg

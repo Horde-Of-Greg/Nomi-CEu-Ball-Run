@@ -59,31 +59,7 @@ if (LabsModeHelper.normal) {
         .buildAndRegister()
 } else {
     // HM Specific
-
-    // Energy Source Hatch
-    mods.gregtech.universal_crystallizer.recipeBuilder()
-        .notConsumable(metaitem('infinite_energy'))
-        .inputs(metaitem('transformer.adjustable.uv') * 64,
-            metaitem('nomilabs:wireGtHexOmnium') * 64,
-            ore('circuitUhv') * 16,
-            metaitem('field.generator.uv') * 16,
-            metaitem('sensor.uv') * 16,
-            metaitem('laser_hatch.source_4096a.uv') * 4)
-        .inputWildNBT(metaitem('max.battery'))
-        .fluidInputs(fluid('naquadria') * 82944) // 64 Blocks
-        .outputs(metaitem('zbgt:creative_energy_source'))
-        .duration(200).EUt(VA[UHV])
-        .buildAndRegister()
 }
-
-// Creative Coils
-mods.gregtech.precise_assembler_recipes.recipeBuilder()
-    .inputs(item('avaritia:resource', 5), item('gregtech:wire_coil', 7) * 512)
-    .fluidInputs(fluid('neutronium') * 512000, fluid('pyrotheum') * 20000000)
-    .outputs(item('zbgt:creative_heating_coil'))
-    .casingTier(4)
-    .duration(200).EUt(VA[MAX])
-    .buildAndRegister()
 
 /* YOTTank Cells */
 // Add new recipes for YOTTank Cells
