@@ -205,7 +205,7 @@ jobs:
         id: fc
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'nomi-ceu-management[bot]'
+          comment-author: "nomi-ceu-management[bot]"
           body-includes: |
             ## PR Mod Changes
             *This comment is automatically updated with PR changes (when the workflow runs).*
