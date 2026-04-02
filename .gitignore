@@ -28,3 +28,6 @@ tools/.dest/
 # Linux
 *~
 
+# Configs
+overrides/config/jei/worldSettings.cfg
+overrides/config/JustEnoughCalculation/record.json

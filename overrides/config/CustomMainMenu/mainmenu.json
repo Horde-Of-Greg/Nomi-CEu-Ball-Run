@@ -8,11 +8,11 @@
       },
       "alignment": "center",
       "height": 20,
-      "posX": -120,
+      "posX": 1,
       "posY": -20,
       "text": "menu.multiplayer",
-      "texture": "minecraft:textures/gui/elements/large-menu-button.png",
-      "width": 240
+      "texture": "minecraft:textures/gui/elements/medium-menu-button.png",
+      "width": 119
     },
     "options": {
       "action": {
@@ -38,6 +38,19 @@
       "text": "menu.quit",
       "texture": "minecraft:textures/gui/elements/large-menu-button.png",
       "width": 240
+    },
+    "singleplayer": {
+      "action": {
+        "gui": "singleplayer",
+        "type": "openGui"
+      },
+      "alignment": "center",
+      "height": 20,
+      "posX": -120,
+      "posY": -20,
+      "text": "menu.singleplayer",
+      "texture": "minecraft:textures/gui/elements/medium-menu-button.png",
+      "width": 119
     }
   },
   "images": {
