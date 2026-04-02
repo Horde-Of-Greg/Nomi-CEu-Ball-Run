@@ -27,10 +27,3 @@ tools/.dest/
 
 # Linux
 *~
-
-# Configs
-overrides/config/jei/worldSettings.cfg
-overrides/config/JustEnoughCalculation/record.json
-
-# Avoid unwanted configs in commits
-overrides/config/
