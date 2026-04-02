@@ -1,6 +1,6 @@
 {
   "_comment": "Setting this to true will recreate this entire file on next start",
-  "reload": true,
+  "reload": false,
   "orePrefixes": [
     "ingot",
     "ingotHot",
@@ -28,6 +28,10 @@
     "wireFine",
     "springSmall",
     "spring",
+    "ball",
+    "crystal",
+    "coin",
+    "fuel",
     "turbineBlade",
     "rotor",
     "lens",
@@ -96,6 +100,7 @@
     "oreRedSand",
     "oreNetherrack",
     "oreEndstone",
-    "log"
+    "log",
+    "rod"
   ]
 }
