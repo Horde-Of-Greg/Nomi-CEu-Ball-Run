@@ -9,7 +9,6 @@ import static gregtech.api.GTValues.*
 import static post.classes.Common.*
 
 import com.nomiceu.nomilabs.groovy.ChangeRecipeBuilder
-import com.nomiceu.nomilabs.util.LabsModeHelper
 import gregtech.api.items.metaitem.MetaItem
 import gregtech.api.recipes.Recipe
 import gregtech.api.recipes.RecipeBuilder

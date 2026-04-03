@@ -1,11 +1,14 @@
 {
-	"extends": "all",
-	"rules": {
+    "extends": "all",
+    "rules": {
+        "PackageNameMatchesFilePath": {
+            "enabled": false
+        },
         "braces.ElseBlockBraces": "off",
         "braces.IfStatementBraces": "off",
         "convention.CompileStatic": "off",
-        "convention.NoDef": "off",
         "convention.ImplicitReturnStatement": "warn",
+        "convention.NoDef": "off",
         "convention.VariableTypeRequired": "off",
         "design.BuilderMethodWithSideEffects": "off",
         "design.Instanceof": "off",
@@ -14,10 +17,10 @@
         "dry.DuplicateNumberLiteral": "off",
         "dry.DuplicateStringLiteral": "off",
         "formatting.BlankLineBeforePackage": "off",
-		"formatting.Indentation": {
-			"spacesPerIndentLevel": 4,
-			"severity": "error"
-		},
+        "formatting.Indentation": {
+            "spacesPerIndentLevel": 4,
+            "severity": "error"
+        },
         "formatting.LineLength": {
             "length": 130
         },
@@ -34,5 +37,5 @@
             "groupId": "post"
         },
         "unnecessary.UnnecessaryReturnKeyword": "off"
-	}
+    }
 }
