@@ -4,7 +4,6 @@ import static gregtech.api.GTValues.*
 import static post.classes.Common.*
 
 mods.jei.category.with {
-    hideCategory('gregtech:molecular_transformer')
     hideCategory('gregtech:circuit_assembly_line_recipes')
     hideCategory('gregtech:precise_assembler_recipes')
 }
@@ -67,7 +66,7 @@ var assemblerItemsToNuke = [
     metaitem('zbgt:wrapped.circuit_board.advanced'),
     metaitem('zbgt:wrapped.circuit_board.elite'),
     metaitem('zbgt:wrapped.circuit_board.extreme'),
-    metaitem('zbgt:wrapped.circuit_board.master'),
+    metaitem('zbgt:wrapped.circuit_board.wetware'),
     metaitem('zbgt:wrapped.chip.soc_simple'),
     metaitem('zbgt:wrapped.chip.soc'),
     metaitem('zbgt:wrapped.chip.soc_advanced'),
@@ -94,7 +93,6 @@ var assemblerItemsToNuke = [
 var assemblyLineItemsToNuke = [
     metaitem('zbgt:cal'),
     metaitem('zbgt:energy_infuser'),
-    metaitem('zbgt:molecular_transformer'),
 ]
 
 for (var metaname: craftingItemsToNuke) {
