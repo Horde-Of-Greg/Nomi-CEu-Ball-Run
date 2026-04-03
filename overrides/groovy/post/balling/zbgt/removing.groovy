@@ -32,6 +32,10 @@ var craftingItemsToNuke = [
     metaitem('zbgt:industrial_pbf'),
     metaitem('zbgt:yottank'),
     metaitem('zbgt:large_alloy_smelter'),
+    item('zbgt:misc_casing'),
+    item('zbgt:misc_casing', 6),
+    item('zbgt:misc_casing', 7),
+    item('zbgt:yottank_cell')
 ]
 
 var assemblerItemsToNuke = [
@@ -43,6 +47,8 @@ var assemblerItemsToNuke = [
     metaitem('zbgt:mega_abs'),
     metaitem('zbgt:mega_ocu'),
     metaitem('zbgt:mega_lcr'),
+    metaitem('zbgt:coolant_cell.60k'),
+    metaitem('zbgt:gregtech_computer_cube'),
     metaitem('zbgt:wrapped.smd.capacitor'),
     metaitem('zbgt:wrapped.smd.diode'),
     metaitem('zbgt:wrapped.smd.inductor'),
@@ -88,23 +94,86 @@ var assemblerItemsToNuke = [
     metaitem('zbgt:wrapped.misc.crystal_cpu'),
     metaitem('zbgt:wrapped.misc.crystal_soc'),
     metaitem('zbgt:precise_assembler'),
+    metaitem('zbgt:gg_circuit_1'),
+    item('zbgt:yottank_cell', 1),
+    item('zbgt:yottank_cell', 2),
+    item('zbgt:misc_casing', 8),
+    item('zbgt:precise_casing'),
+    item('zbgt:precise_casing', 1),
+    item('zbgt:precise_casing', 2),
+    item('zbgt:precise_casing', 3),
+    item('zbgt:precise_casing', 4),
 ]
 
 var assemblyLineItemsToNuke = [
     metaitem('zbgt:cal'),
     metaitem('zbgt:energy_infuser'),
+    item('zbgt:misc_casing', 9),
+    item('zbgt:misc_casing', 10),
+    item('zbgt:yottank_cell', 3),
 ]
 
-for (var metaname: craftingItemsToNuke) {
-    mods.jei.ingredient.removeAndHide(metaname)
+var engraverItemsToNuke = [
+    metaitem('zbgt:engraved_gold_chip'),
+    metaitem('zbgt:engraved_diamond_chip'),
+    metaitem('zbgt:engraved_energy_chip'),
+    metaitem('zbgt:engraved_manyullyn_chip'),
+]
+
+var extruderItemsToNuke = [
+    metaitem('zbgt:special_ceramics_plate'),
+]
+
+var cannerItemsToNuke = [
+    metaitem('zbgt:coolant_cell.360k.nak'),
+    metaitem('zbgt:coolant_cell.360k.he'),
+]
+
+var justHide = [
+    metaitem('zbgt:gg_circuit_2'),
+    metaitem('zbgt:gg_circuit_3'),
+    metaitem('zbgt:gg_circuit_4'),
+    metaitem('zbgt:gg_circuit_5'),
+    metaitem('zbgt:micro_heater'),
+    metaitem('zbgt:quartz_crystal_resonator'),
+    item('zbgt:misc_casing', 4),
+    item('zbgt:misc_casing', 5),
+]
+
+for (var item: craftingItemsToNuke) {
+    mods.jei.ingredient.removeAndHide(item)
 }
 
-for (var metaname: assemblerItemsToNuke) {
-    mods.jei.ingredient.hide(metaname)
-    mods.gregtech.assembler.removeByOutput([metaname], null)
+for (var item: assemblerItemsToNuke) {
+    mods.jei.ingredient.hide(item)
+    mods.gregtech.assembler.removeByOutput([item], null)
 }
 
-for (var metaname: assemblyLineItemsToNuke) {
-    mods.jei.ingredient.hide(metaname)
-    mods.gregtech.assembly_line.removeByOutput([metaname], null)
+for (var item: assemblyLineItemsToNuke) {
+    mods.jei.ingredient.hide(item)
+    mods.gregtech.assembly_line.removeByOutput([item], null)
 }
+
+for (var item: engraverItemsToNuke) {
+    mods.jei.ingredient.hide(item)
+    mods.gregtech.laser_engraver.removeByOutput([item], null)
+}
+
+for (var item: extruderItemsToNuke) {
+    mods.jei.ingredient.hide(item)
+    mods.gregtech.extruder.removeByOutput([item], null)
+}
+
+for (var item: cannerItemsToNuke) {
+    mods.jei.ingredient.hide(item)
+    mods.gregtech.canner.removeByOutput([item], null)
+}
+
+for (var item: justHide) {
+    mods.jei.ingredient.hide(item)
+}
+
+// Misc recipes
+mods.jei.ingredient.hide(metaitem('zbgt:quartz_wafer'))
+mods.gregtech.autoclave.removeByInput(30, [metaitem('plateQuartzite'), metaitem('dustSodium') * 4], [fluid('distilled_water') * 1000 * 1000])
+mods.gregtech.autoclave.removeByInput(30, [metaitem('plateQuartzite'), metaitem('dustSodium') * 4], [fluid('water') * 1000 * 1000])

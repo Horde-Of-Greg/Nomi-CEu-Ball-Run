@@ -33,7 +33,7 @@ mods.gregtech.assembly_line.recipeBuilder()
     .inputs(
         item('gregtech:fusion_casing', 1) * 3,
         ore('circuitUv') * 4,
-        metaitem('plateDenseTrinaquadalloy') * 2
+        metaitem('zbgt:radiation_protection_plate') * 2
     )
     .fluidInputs(
         fluid('soldering_alloy') * (1152 * 2),
@@ -61,3 +61,14 @@ mods.gregtech.assembly_line.recipeBuilder()
     .stationResearch(b -> b.researchStack(item('zbgt:misc_casing', 2)).CWUt(64))
     .duration(35 * 20).EUt(VA[UV])
     .buildAndRegister()
+
+//Misc Recipes that are too goofy
+crafting.shapedBuilder()
+        .output(metaitem('zbgt:extreme_air_intake_hatch'))
+        .shape('PIP','PEP', 'CHC')
+        .key('P', metaitem('plateHastelloyC276'))
+        .key('I', metaitem('zbgt:air_intake_hatch'))
+        .key('E', metaitem('electric.pump.zpm'))
+        .key('C', ore('circuitZpm'))
+        .key('H', metaitem('fluid_hatch.import.zpm'))
+        .replace().register()
