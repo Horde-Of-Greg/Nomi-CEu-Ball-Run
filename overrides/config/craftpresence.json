@@ -1,5 +1,5 @@
 {
-  "_schemaVersion": 7,
+  "_schemaVersion": 6,
   "_lastMCVersionId": 340,
   "generalSettings": {
     "detectATLauncherInstance": false,
@@ -162,9 +162,7 @@
       "default": {
         "textOverride": "Playing Multiplayer ({custom.mode} Mode)"
       }
-    },
-    "pingRateInterval": 5,
-    "pingRateUnit": "minutes"
+    }
   },
   "statusMessages": {
     "mainMenuData": {
@@ -184,7 +182,12 @@
         "smallImageText": "",
         "startTimestamp": "",
         "endTimestamp": "",
-        "buttons": {}
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
       }
     },
     "loadingData": {
@@ -204,7 +207,12 @@
         "smallImageText": "",
         "startTimestamp": "",
         "endTimestamp": "",
-        "buttons": {}
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
       }
     },
     "lanData": {
@@ -223,7 +231,12 @@
         "smallImageText": "",
         "startTimestamp": "",
         "endTimestamp": "",
-        "buttons": {}
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
       }
     },
     "singleplayerData": {
@@ -242,7 +255,12 @@
         "smallImageText": "",
         "startTimestamp": "",
         "endTimestamp": "",
-        "buttons": {}
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
       }
     },
     "realmData": {
@@ -261,7 +279,12 @@
         "smallImageText": "",
         "startTimestamp": "",
         "endTimestamp": "",
-        "buttons": {}
+        "buttons": {
+          "default": {
+            "label": "Example Text",
+            "url": "https://google.com"
+          }
+        }
       }
     }
   },
@@ -328,6 +351,10 @@
       "startTimestamp": "{data.general.time}",
       "endTimestamp": "",
       "buttons": {
+        "default": {
+          "label": "Example Text",
+          "url": "https://google.com"
+        },
         "github": {
           "label": "Nomi-CEu GitHub",
           "url": "https://github.com/Nomi-CEu/Nomi-CEu"
@@ -339,6 +366,7 @@
       }
     },
     "dynamicIcons": {
+      "default": "https://via.placeholder.com/256.png",
       "IntegerLimit_": "https://mc-heads.net/avatar/ba3d12a4b7f347309db3b9f71531e8d6"
     },
     "dynamicVariables": {
@@ -351,6 +379,7 @@
       "mode": "{executeMethod('com.nomiceu.nomilabs.util.LabsModeHelper', null, 'getFormattedMode')}",
       "logoSlug": "logo-{executeMethod('com.nomiceu.nomilabs.util.LabsModeHelper', null, 'getMode')}",
       "tierSlug": "{executeMethod('com.nomiceu.nomilabs.integration.betterquesting.LabsTierHelper', null, 'getTierSlug')}",
+      "default": "Example Text",
       "player_info_coordinate": "At {player.position.x}, {player.position.z}",
       "player_info_in": "({custom.player_info.health})",
       "tierName": "{executeMethod('com.nomiceu.nomilabs.integration.betterquesting.LabsTierHelper', null, 'getTierName')}",
