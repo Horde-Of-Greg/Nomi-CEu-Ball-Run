@@ -35,7 +35,7 @@ var craftingItemsToNuke = [
     item('zbgt:misc_casing'),
     item('zbgt:misc_casing', 6),
     item('zbgt:misc_casing', 7),
-    item('zbgt:yottank_cell')
+    item('zbgt:yottank_cell'),
 ]
 
 var assemblerItemsToNuke = [
@@ -175,5 +175,9 @@ for (var item: justHide) {
 
 // Misc recipes
 mods.jei.ingredient.hide(metaitem('zbgt:quartz_wafer'))
-mods.gregtech.autoclave.removeByInput(30, [metaitem('plateQuartzite'), metaitem('dustSodium') * 4], [fluid('distilled_water') * 1000 * 1000])
-mods.gregtech.autoclave.removeByInput(30, [metaitem('plateQuartzite'), metaitem('dustSodium') * 4], [fluid('water') * 1000 * 1000])
+mods.gregtech.autoclave.removeByInput(
+    30, [metaitem('plateQuartzite'), metaitem('dustSodium') * 4], [fluid('distilled_water') * 1000 * 1000]
+)
+mods.gregtech.autoclave.removeByInput(
+    30, [metaitem('plateQuartzite'), metaitem('dustSodium') * 4], [fluid('water') * 1000 * 1000]
+)

@@ -65,7 +65,7 @@ mods.gregtech.assembly_line.recipeBuilder()
 //Misc Recipes that are too goofy
 crafting.shapedBuilder()
         .output(metaitem('zbgt:extreme_air_intake_hatch'))
-        .shape('PIP','PEP', 'CHC')
+        .shape('PIP', 'PEP', 'CHC')
         .key('P', metaitem('plateHastelloyC276'))
         .key('I', metaitem('zbgt:air_intake_hatch'))
         .key('E', metaitem('electric.pump.zpm'))
