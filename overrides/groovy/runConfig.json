@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "debug": false,
     "loaders": {
+        "preInit": ["pre/balling"],
         "postInit": ["post/classes", "post/bootstrap", "post/main", "post/addon", "post/balling"]
     }
 }
