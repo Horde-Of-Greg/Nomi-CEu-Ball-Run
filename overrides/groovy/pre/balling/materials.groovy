@@ -1,3 +1,5 @@
+package pre.balling
+
 mods.gregtech.materialEvent {
         materialBuilder(32000, 'cross_linked_polyethylene')
             .ingot().liquid().polymer()

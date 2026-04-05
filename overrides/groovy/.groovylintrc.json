@@ -34,7 +34,7 @@
         "naming.ClassNameSameAsFilename": "off",
         "naming.FactoryMethodName": "off",
         "naming.PackageNameMatchesFilePath": {
-            "groupId": "post"
+            "groupId": ["post", "pre"]
         },
         "unnecessary.UnnecessaryReturnKeyword": "off"
     }
