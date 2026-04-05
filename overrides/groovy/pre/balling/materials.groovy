@@ -5,8 +5,8 @@ mods.gregtech.materialEvent {
             .ingot().liquid().polymer()
             .flags('disable_decomposition')
             .iconSet('fine')
-            .components(material('polyethylene') * 1)
+            .components(material('plastic') * 1)
             .colorAverage()
-            .fluidPipeProperties(Integer.MAX_VALUE, Integer.MAX_VALUE, true, true, true, true)
+            .fluidPipeProperties(Integer.MAX_VALUE, 13421772, true, true, true, true)
             .build()
 }
